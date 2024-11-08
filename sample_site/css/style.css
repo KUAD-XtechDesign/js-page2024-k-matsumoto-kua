@@ -115,6 +115,7 @@ body.menu_open .menu{
 
 .splide__slide {
   border-radius: 100px;
+  overflow: hidden;
   height: 150px;
   background-color: #ddd;
   display: flex;
@@ -127,10 +128,25 @@ body.menu_open .menu{
 ================================================= */
 
 .img_contents{
-  background-color: #e8e3cd;
+  background-color: #cde8d3;
   text-align: center;
 }
 
 #title span{
   display: inline-block;
+}
+
+.slide .splide__pagination {
+  bottom: -20px;
+}
+
+.slide .splide__pagination__page.is-active{
+  background-color: #f00;
+}
+
+#title{
+  font-size: 100px;
+  color: #f00;
+  z-index: 100;
+  position: relative;
 }

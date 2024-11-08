@@ -10,7 +10,7 @@ $(function(){
   new Splide(".splide", {
     type: "loop", // ループあり
     arrows: false, // 矢印非表示
-    pagination: false, // ページネーション非表示
+    pagination: true, // ページネーション非表示
     fixedWidth: "400px", // スライドのwidth200px
     gap: "20px", // スライド間の余白20px
   }).mount( window.splide.Extensions );
@@ -31,10 +31,10 @@ $(function(){
 
   //https://ics.media/entry/220822/
   gsap.from(title.querySelectorAll('span'), {
-    y: -30,
-    x: -200,
+    y: 1130,
+    x: 1200,
     autoAlpha: 0,
-    duration: 1,
+    duration: 10,
     ease: "power4.out",
     stagger: -0.1, // 0.1秒ごとに出現
   });
